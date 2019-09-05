@@ -16,6 +16,8 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <yw-switch v-model="lightSwitch">开关:</yw-switch>
+    <yw-hello-world :color="color" :msg="msg"></yw-hello-world>
   </div>
 </template>
 
@@ -24,7 +26,10 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      color: 'red',
+      msg: 'Welcome to Your Vue.js App',
+      // switch
+      lightSwitch: false,
     }
   }
 }

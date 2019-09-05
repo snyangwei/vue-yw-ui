@@ -1,9 +1,9 @@
 import HelloWorld from './packages/hello-world/index.js';
-import Switch from './packages/switch/index.js';
+import YwSwitch from './packages/switch/index.js';
 
 const components = [
   HelloWorld,
-  Switch
+  YwSwitch
 ]
 
 const install = function(Vue, opts = {}) {
@@ -20,5 +20,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   HelloWorld,
-  Switch
+  YwSwitch
 }
