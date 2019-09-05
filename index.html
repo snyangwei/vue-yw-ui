@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-yw-ui</title>
+  </head>
+  <body>
+    9999
+    <div id="app">
+      <yw-hello-world :color="color" :msg="msg"></yw-hello-world>
+      <yw-switch v-model="lightSwitch">开关:</yw-switch>
+    </div>
+    <!-- <script src="/dist/build.js"></script> -->
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./dist/vue-yw-ui.js"></script>
+  </body>
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          color: 'red',
+          msg: 'hello world!',
+          lightSwitch: false
+        }
+      }
+    })
+    </script>
+</html>
